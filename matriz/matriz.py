@@ -5,6 +5,14 @@ columnas = 5
 
 
 def genera_matriz():
+    """
+    >>> matriz = genera_matriz()
+
+    >>> len(matriz) == 5
+    True
+    >>> len(matriz[0]) == 5
+    True
+    """
     matriz = []
     for n in range(filas):
         fila = []
@@ -104,3 +112,7 @@ if secuencia_vertical:
     print(f"Posicion final: {posicion_final_vertical}")
 else:
     print(f"No se encontró secuencia vertical")
+
+if __name__ == "__main__":
+    import doctest
+    doctest.testmod()
